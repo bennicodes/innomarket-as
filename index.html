@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="InnoMarket leverer profesjonell gulvlegging, flislegging og riving. Ta kontakt for gratis befaring!"
+    />
+    <meta
+      name="keywords"
+      content="gulvlegging, flislegging, riving, gulvarbeid, Oslo, InnoMarket"
+    />
+    <meta name="author" content="InnoMarket" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/variables.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/form.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
+    <title>InnoMarket - Alt innen gulv</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container header__container">
+        <div class="header__logo">
+          <a href="#" class="header__logo-link">InnoMarket</a>
+        </div>
+        <nav id="nav" class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#about" class="header__nav-link">Om Oss</a>
+            </li>
+            <span>|</span>
+            <li class="header__nav-item">
+              <a href="#services" class="header__nav-link">Tjenester</a>
+            </li>
+            <span>|</span>
+            <li class="header__nav-item">
+              <a href="#partners" class="header__nav-link"
+                >Samarbeidspartnere</a
+              >
+            </li>
+            <span>|</span>
+            <li class="header__nav-item">
+              <a href="#contact" class="header__nav-link">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero__container">
+          <h1 class="hero__title">Alt innen gulv</h1>
+          <p class="hero__description">
+            Vi hjelper deg med å realisere dine prosjekter.
+          </p>
+          <button
+            href="#contact"
+            id="contact-button"
+            class="button button--primary"
+          >
+            Gratis Befaring
+          </button>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container about__container">
+          <h2 class="about__title">Om Oss</h2>
+          <p class="about__description">
+            InnoMarket er en gulvbedrift som spesialiserer seg på alle aspekter
+            av gulvarbeid. Vårt mål er å levere høy kvalitet og kundetilfredshet
+            i hvert prosjekt.
+          </p>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <div class="container services__container">
+          <h2 class="services__title">Tjenester</h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <h3 class="services__item-title">Gulvlegging</h3>
+              <p class="services__item-description">
+                Profesjonell installasjon av ulike gulvtyper for både bolig og
+                næring.
+              </p>
+            </li>
+
+            <li class="services__item">
+              <h3 class="services__item-title">Riving</h3>
+              <p class="services__item-description">
+                Effektiv og sikker fjerning av gamle gulv for å forberede for
+                nye installasjoner.
+              </p>
+            </li>
+
+            <li class="services__item">
+              <h3 class="services__item-title">Flislegging</h3>
+              <p class="services__item-description">
+                Ekspert flislegging for bad, kjøkken og andre områder, med fokus
+                på presisjon og kvalitet.
+              </p>
+            </li>
+
+            <li class="services__item">
+              <h3 class="services__item-title">Avretting av gulv</h3>
+              <p class="services__item-description">
+                Sikrer et jevnt og stabilt underlag før gulvlegging eller
+                flislegging, for et perfekt sluttresultat.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="partners" class="partners">
+        <div class="container partners__container">
+          <h2 class="partners__title">Samarbeidspartnere</h2>
+          <ul class="partners__list">
+            <li class="partners__item">
+              <a href="https://duri.no" target="_blank" class="partners__link">
+                <img
+                  src="./src/assets/img/duri-norge-logo.png"
+                  alt="Duri logo"
+                  class="partners__image"
+                />
+              </a>
+            </li>
+            <li class="partners__item">
+              <a href="https://duri.no" target="_blank" class="partners__link">
+                <img
+                  src="./src/assets/img/snickers-workwear-removebg-preview.png"
+                  alt="Duri logo"
+                  class="partners__image"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container contact__container">
+          <h2 class="contact__title">Kontakt Oss</h2>
+          <p class="contact__description">
+            Har du et nytt prosjekt? Ta kontakt for en gratis befaring.
+          </p>
+          <form action="submit_form.php" method="post" class="contact__form">
+            <label for="name" class="contact__label">Navn:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="contact__input"
+            />
+
+            <label for="email" class="contact__label">E-post:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="contact__input"
+            />
+
+            <label for="message" class="contact__label">Melding:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              class="contact__textarea"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="button form__submit-button button--primary"
+            >
+              Send Forespørsel
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- To the top button -->
+    <button class="to-top-button">
+      <i class="fa-solid fa-angle-up to-top-icon"></i>
+    </button>
+
+    <footer id="footer" class="footer">
+      <div class="container footer__container">
+        <div class="container footer__contact-container">
+          <div class="footer__text-container">
+            <p class="footer__text-heading">E-post</p>
+            <p class="footer__text">post@innomarket.no</p>
+          </div>
+          <div class="footer__text-container footer__middle-container">
+            <p class="footer__text-heading">Telefon</p>
+            <p class="footer__text">Tlf: 934638646</p>
+          </div>
+
+          <div class="footer__text-container">
+            <p class="footer__text-heading">Adresse</p>
+            <p class="footer__text">Åsvegen 625, 2030 Nannestad</p>
+          </div>
+        </div>
+        <p class="footer__copy-text">
+          &copy; 2025 InnoMarket. Alle rettigheter reservert.
+        </p>
+      </div>
+    </footer>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "InnoMarket",
+        "description": "Gulvlegging, flislegging og riving i Oslo og omegn.",
+        "telephone": "+47 934638646",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Åsvegen 625, 2030 Nannestad",
+          "addressLocality": "Oslo",
+          "addressCountry": "NO"
+        },
+        "url": "https://dittnettsted.no"
+      }
+    </script>
+
+    <script type="module" src="./src/js/app.js"></script>
+  </body>
+</html>

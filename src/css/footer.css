@@ -1,0 +1,30 @@
+/* Footer ---------------------- */
+.footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: var(--spacing-md) 0;
+  margin-top: var(--spacing-lg);
+}
+.footer__contact-container {
+  width: 100%;
+  display: flex;
+  margin-bottom: var(--spacing-md);
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: 0 var(--spacing-md);
+}
+
+.footer__text {
+  padding: 0 var(--spacing-sm);
+}
+
+.footer__middle-container {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}

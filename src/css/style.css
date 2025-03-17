@@ -1,0 +1,203 @@
+/* Import fonts */
+@font-face {
+  font-family: Lato-Light;
+  src: url(../assets/fonts/Lato-Light.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-dark);
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: var(--primary-color);
+  padding: var(--spacing-sm) 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-family: Lato-Light, sans-serif;
+}
+
+.header__logo-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: var(--font-size-xl);
+  letter-spacing: 2px;
+}
+
+.header__nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.header__nav-item {
+  display: inline;
+}
+
+.header__nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+.header__nav-link:hover {
+  border-bottom: 1px solid var(--text-color);
+}
+/* Main */
+main {
+  width: 100%;
+}
+/* Hero Section ---------------------- */
+.hero {
+  background-image: url("../assets/img/dark-kitchen.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--text-color);
+  text-align: center;
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.hero__title {
+  font-size: var(--font-size-xl);
+}
+
+.hero__description {
+  font-size: var(--font-size-lg);
+  max-width: 800px;
+  text-align: center;
+  font-size: var(--font-size-medium);
+}
+
+.button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-large);
+  display: inline-block;
+  border: 1px solid var(--text-color);
+}
+
+.button--primary {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+  transition: all 0.5s ease;
+}
+.button--primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* All sections */
+section {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--background-dark);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* About Us ---------------------- */
+.about__description {
+  text-align: center;
+}
+
+/* Services Section ---------------------- */
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.services__item {
+  flex: 1 1 45%;
+  margin: var(--spacing-sm);
+  padding: var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+}
+
+/* Partners Section ---------------------- */
+.partners__list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.partners__item {
+  margin: var(--spacing-sm);
+}
+.partners__image {
+  width: 200px;
+  height: auto;
+}
+
+.to-top-button {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  color: var(--text-color);
+  border: none;
+  position: fixed;
+  left: 32px;
+  bottom: 33%;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: none;
+}
+.display-scroll-button {
+  display: block;
+}
+
+/* Responsive Styles ---------------------- */
+@media (max-width: 48rem) {
+  /* 768px */
+  .services__list {
+    flex-direction: column;
+  }
+
+  .header__nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    padding: var(--spacing-lg) 0;
+  }
+}
