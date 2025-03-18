@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
   scrollToTop();
 });
 
-contactButton.addEventListener("click", () => {
-  if (contactSection) {
-    contactSection.scrollIntoView({ behavior: "smooth" });
-  }
-});
+// contactButton.addEventListener("click", () => {
+//   if (contactSection) {
+//     contactSection.scrollIntoView({ behavior: "smooth" });
+//   }
+// });

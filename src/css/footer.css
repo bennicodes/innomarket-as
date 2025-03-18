@@ -28,3 +28,17 @@
   border-left: 1px solid white;
   border-right: 1px solid white;
 }
+
+/* Media queries ---------------- */
+@media screen and (max-width: 786px) {
+  footer {
+    font-size: var(--font-size-small);
+  }
+
+  .footer__text-container {
+    padding: 0 var(--spacing-sm);
+  }
+  .footer__text{
+    padding: 0;
+  }
+}
