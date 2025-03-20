@@ -24,6 +24,14 @@
   padding: 0 var(--spacing-sm);
 }
 
+.footer__link {
+  color: var(--text-color);
+}
+.footer__link:hover {
+  color: grey;
+  cursor: pointer;
+}
+
 .footer__middle-container {
   border-left: 1px solid white;
   border-right: 1px solid white;
@@ -38,7 +46,13 @@
   .footer__text-container {
     padding: 0 var(--spacing-sm);
   }
-  .footer__text{
+  .footer__text {
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer__text{
+    line-break: strict;
   }
 }

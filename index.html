@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="no">
   <head>
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Metadata -->
+    <title>InnoMarket - Alt innen gulv</title>
     <meta
       name="description"
       content="InnoMarket leverer profesjonell gulvlegging, flislegging og riving. Ta kontakt for gratis befaring!"
@@ -12,18 +16,38 @@
       content="gulvlegging, flislegging, riving, gulvarbeid, Oslo, InnoMarket"
     />
     <meta name="author" content="InnoMarket" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "InnoMarket",
+        "description": "Gulvlegging, flislegging og riving i Oslo og omegn.",
+        "telephone": "+47 934638646",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Åsvegen 625, 2030 Nannestad",
+          "addressLocality": "Oslo",
+          "addressCountry": "NO"
+        },
+        "url": "https://dittnettsted.no"
+      }
+    </script>
+
+    <!-- Stylesheets (Optimized Order) -->
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/variables.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/navbar.css" />
+    <link rel="stylesheet" href="./src/css/form.css" />
+    <link rel="stylesheet" href="./src/css/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./src/css/reset.css" />
-    <link rel="stylesheet" href="./src/css/variables.css" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <link rel="stylesheet" href="./src/css/form.css" />
-    <link rel="stylesheet" href="./src/css/footer.css" />
-    <title>InnoMarket - Alt innen gulv</title>
   </head>
+
   <body>
     <header id="header" class="header">
       <div class="container header__container">
@@ -65,13 +89,9 @@
           <p class="hero__description">
             Vi hjelper deg med å realisere dine prosjekter.
           </p>
-          <button
-            href="#contact"
-            id="contact-button"
-            class="button button--primary"
-          >
+          <a href="#contact" id="contact-button" class="button button--primary">
             Gratis Befaring
-          </button>
+          </a>
         </div>
       </section>
 
@@ -205,16 +225,31 @@
         <div class="container footer__contact-container">
           <div class="footer__text-container">
             <p class="footer__text-heading">E-post</p>
-            <p class="footer__text">post@innomarket.no</p>
+            <p class="footer__text">
+              <a href="mailto:post@innomarket.no" class="footer__link">
+                post@innomarket.no
+              </a>
+            </p>
           </div>
+
           <div class="footer__text-container footer__middle-container">
             <p class="footer__text-heading">Telefon</p>
-            <p class="footer__text">934638646</p>
+            <p class="footer__text">
+              <a href="tel:+47934638646" class="footer__link">934 63 8646</a>
+            </p>
           </div>
 
           <div class="footer__text-container">
             <p class="footer__text-heading">Adresse</p>
-            <p class="footer__text">Åsvegen 625, 2030 Nannestad</p>
+            <p class="footer__text">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Åsvegen+625,+2030+Nannestad"
+                target="_blank"
+                class="footer__link"
+              >
+                Åsvegen 625, 2030 Nannestad
+              </a>
+            </p>
           </div>
         </div>
         <p class="footer__copy-text">
@@ -222,23 +257,6 @@
         </p>
       </div>
     </footer>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "InnoMarket",
-        "description": "Gulvlegging, flislegging og riving i Oslo og omegn.",
-        "telephone": "+47 934638646",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Åsvegen 625, 2030 Nannestad",
-          "addressLocality": "Oslo",
-          "addressCountry": "NO"
-        },
-        "url": "https://dittnettsted.no"
-      }
-    </script>
 
     <script type="module" src="./src/js/app.js"></script>
   </body>
